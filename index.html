@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Studio Graficzne Pixel</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1 id="site-title">Studio Graficzne Pixel</h1>
+      <nav>
+        <a href="#onas" id="nav-about">O nas</a>
+        <a href="#sklep" id="nav-shop">Sklep</a>
+        <a href="#kontakt" id="nav-contact">Kontakt</a>
+        <button id="lang-toggle">🇬🇧</button>
+      </nav>
+    </div>
+  </header>
+
+  <section id="onas" class="section">
+    <div class="container">
+      <h2 id="about-title">O nas</h2>
+      <p id="about-text">Tworzymy unikalne projekty graficzne – od logo po pełną identyfikację wizualną. Studio Pixel to pasja, kreatywność i profesjonalizm.</p>
+    </div>
+  </section>
+
+  <section id="sklep" class="section">
+    <div class="container">
+      <h2 id="shop-title">Sklep</h2>
+      <div class="produkty">
+        <div class="produkt">
+          <img src="https://via.placeholder.com/200" alt="Produkt 1">
+          <h3 id="product1-title">Logo Premium</h3>
+          <p id="product1-desc">Profesjonalne logo dostosowane do Twojej marki.</p>
+          <span class="cena">299 zł</span>
+          <button onclick="dodajDoKoszyka('Logo Premium', 299)" id="product1-btn">Dodaj do koszyka</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="kontakt" class="section">
+    <div class="container">
+      <h2 id="contact-title">Kontakt</h2>
+      <form>
+        <input type="text" placeholder="Twoje imię" required id="form-name">
+        <input type="email" placeholder="Twój email" required id="form-email">
+        <textarea placeholder="Wiadomość" required id="form-message"></textarea>
+        <button type="submit" id="form-submit">Wyślij</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p id="footer-text">&copy; 2025 Studio Graficzne Pixel</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
